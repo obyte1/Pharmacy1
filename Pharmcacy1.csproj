@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7679339-979C-491B-B6ED-3D72DD3CB1E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pharmcacy1</RootNamespace>
+    <AssemblyName>Pharmcacy1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\ASP.NET VIDEO\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addingitems.cs" />
+    <Compile Include="App Data\sqlcon.cs" />
+    <Compile Include="App Data\sqlconclass.cs" />
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App Data\DGVPrinter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicine.Designer.cs">
+      <DependentUpon>Medicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mypharmacyDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mypharmacyDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="retailsales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="retailsales.Designer.cs">
+      <DependentUpon>retailsales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.cs">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usermessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usermessages.Designer.cs">
+      <DependentUpon>usermessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewcustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewcustomers.Designer.cs">
+      <DependentUpon>viewcustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vieworder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vieworder.Designer.cs">
+      <DependentUpon>vieworder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewstocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewstocks.Designer.cs">
+      <DependentUpon>viewstocks.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicine.resx">
+      <DependentUpon>Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="retailsales.resx">
+      <DependentUpon>retailsales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers.resx">
+      <DependentUpon>Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usermessages.resx">
+      <DependentUpon>usermessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcustomers.resx">
+      <DependentUpon>viewcustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vieworder.resx">
+      <DependentUpon>vieworder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewstocks.resx">
+      <DependentUpon>viewstocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="mypharmacyDataSet.xsc">
+      <DependentUpon>mypharmacyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet.xss">
+      <DependentUpon>mypharmacyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet1.xsc">
+      <DependentUpon>mypharmacyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet1.xss">
+      <DependentUpon>mypharmacyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet10.xsc">
+      <DependentUpon>mypharmacyDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet10.xss">
+      <DependentUpon>mypharmacyDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet11.xsc">
+      <DependentUpon>mypharmacyDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet11.xss">
+      <DependentUpon>mypharmacyDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet12.xsc">
+      <DependentUpon>mypharmacyDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet12.xss">
+      <DependentUpon>mypharmacyDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet13.xsc">
+      <DependentUpon>mypharmacyDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet13.xss">
+      <DependentUpon>mypharmacyDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet14.xsc">
+      <DependentUpon>mypharmacyDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet14.xss">
+      <DependentUpon>mypharmacyDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet2.xsc">
+      <DependentUpon>mypharmacyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet2.xss">
+      <DependentUpon>mypharmacyDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet3.xsc">
+      <DependentUpon>mypharmacyDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet3.xss">
+      <DependentUpon>mypharmacyDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet4.xsc">
+      <DependentUpon>mypharmacyDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet4.xss">
+      <DependentUpon>mypharmacyDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet5.xsc">
+      <DependentUpon>mypharmacyDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet5.xss">
+      <DependentUpon>mypharmacyDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet6.xsc">
+      <DependentUpon>mypharmacyDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet6.xss">
+      <DependentUpon>mypharmacyDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet7.xsc">
+      <DependentUpon>mypharmacyDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet7.xss">
+      <DependentUpon>mypharmacyDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet8.xsc">
+      <DependentUpon>mypharmacyDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet8.xss">
+      <DependentUpon>mypharmacyDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet9.xsc">
+      <DependentUpon>mypharmacyDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="mypharmacyDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mypharmacyDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mypharmacyDataSet9.xss">
+      <DependentUpon>mypharmacyDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
